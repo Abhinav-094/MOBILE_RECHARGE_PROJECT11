@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REACHRGE</title>
+  <link rel="stylesheet" href="CSS/TASK2RECHARGECSS.css">
+  <script src="./JAVASCRIPT/TASK2RECHARGEJS.js"></script>
+  <script>
+    
+  </script>
+</head>
+<body>
+  <label>Mobile Number:</label>
+  <input type="text" id="mobile" maxlength="10" onkeypress="NumberKey(event)" onkeyup="checkMobile()" />
+  <span id="mobile_msg"></span><br><br>
+
+  <label>Recharge Plan:</label>
+  <select id="plan" onchange="plan_change()">
+    <option value="">--Select Plan--</option>
+    <option value="299">₹299 - 28 Days</option>
+    <option value="629">₹629 - 56 Days</option>
+    <option value="799">₹799 - 84 Days</option>
+    <option value="899">₹899 - 90 Days</option>
+  </select><br><br>
+
+  <button onclick="recharge()" >Recharge</button>
+
+  <div id="result" style="display: none;"> 
+    <p id="date"></p>
+    <p id="time"></p>
+    <p id="amount"></p>
+    <p id="validity"></p>
+  </div>
+
+  <div id="expiry" style="display: none;">
+    <p id="exp_date"></p>
+    <p id="exp_time"></p>
+  </div>
+
+</body>
+</htm
